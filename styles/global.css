@@ -70,7 +70,7 @@ header .container {
   cursor: pointer;
 }
 
-.header-list-button button:first-child, .header-list-button button:last-child:hover {
+.header-list-button button:first-child, .header-list-button button:last-child:hover, .banner-text button:hover {
   background-color: #fff;
   color: #18a0fb;
 }
@@ -96,12 +96,53 @@ header .container {
   background: url("../assets/banner.png") no-repeat;
   background-size: cover;
   background-position: cover;
+
 }
 
 .banner img {
   width: 100px;
+  border-radius: 100%;
 }
 
+/*.button-play img {
+  border-radius: 100%;
+}*/
+
+.button-play {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  /*border-radius: 100%;*/
+  position: absolute;
+}
+
+.button-play:hover {
+  filter: brightness(70%);
+  transition: filter 0.5s;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 350px;
+}
+
+.banner-text h1 {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+.banner-text button {
+  height: 40px;
+  width: 140px;
+
+  color: #fff;
+  background-color: #18a0fb;
+  border: 1px solid #18a0fb;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 
