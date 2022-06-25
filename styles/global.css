@@ -35,8 +35,8 @@ button:hover {
   transition: filter 0.2s;
 }
 
-/* HEADER */
 
+/* HEADER */
 header {
   background-color: #fff;
 }
@@ -76,19 +76,18 @@ header .container {
   font-weight: bold;
 }
 
-.header-list-button button:first-child, .header-list-button button:last-child:hover, .banner-text button:hover {
+.header-list-button button:first-child, .header-list-button button:last-child:hover, .banner-text button:hover, .contact-buttons button:first-child:hover {
   background-color: #fff;
   color: #18a0fb;
 }
 
-.header-list-button button:last-child, .header-list-button button:first-child:hover {
+.header-list-button button:last-child, .header-list-button button:first-child:hover, .contact-buttons button:last-child:hover {
   background-color: #18a0fb;
   color: #fff;
 }
 
 
 /* SECTION BANNER */
-
 .banner {
   display: flex;
   flex-direction: column;
@@ -151,9 +150,7 @@ header .container {
 }
 
 
-
 /* SECTION ARTICLES */
-
 .articles {
   padding: 80px 0;
 }
@@ -183,9 +180,7 @@ header .container {
 }
 
 
-
 /* SECTION CICLISMO */
-
 .bicycling {
   padding: 80px 0;
   
@@ -194,7 +189,6 @@ header .container {
   gap: 70px;
   width: 100%;
 }
-
 
 .bicycling div, .sport-car div{
   width: 50%;
@@ -208,8 +202,13 @@ header .container {
   margin-bottom: 20px;
 }
 
+
 /* SECTION SPORT-CAR */
 .sport-car {
+  background-color: #dfdfdf;
+}
+
+.sport-car .container {
   padding: 80px 0;
   
   flex-direction: row-reverse;
@@ -253,3 +252,82 @@ header .container {
   height: 138.5px;
 }
 
+
+/*FOOTER*/
+.contact-us {
+  background-color: #dfdfdf;
+}
+
+.contact-us .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 80px;
+}
+
+.contact-us .container h3 {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 17px;
+}
+
+.contact-buttons button {
+  width: 140px;
+}
+
+.contact-buttons button:first-child {
+  background-color: #18a0fb;
+  color: #fff;
+}
+
+
+/*FOOTER*/
+.footer {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 80px;
+}
+
+.footer nav ul li {
+  display: inline-block;
+  width: 140px;
+}
+
+.footer nav:last-child {
+  text-align: right;
+}
+
+.footer nav ul li a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  margin-top: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.social-media i {
+  margin: 0 5px;
+}
+
+.copyright {
+  text-align: center;
+}
