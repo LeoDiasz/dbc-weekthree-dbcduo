@@ -209,8 +209,6 @@ header .container {
 }
 
 /* SECTION SPORT-CAR */
-
-
 .sport-car {
   padding: 80px 0;
   
@@ -219,5 +217,39 @@ header .container {
   align-items: center;
   gap: 70px;
   width: 100%;
+}
+
+
+/*SECTION BASKETBALL*/
+.basketball {
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.basketball h2 {
+  margin-bottom: 40px;
+  font-size: 36px;
+}
+
+.basketball h3 {
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.basketball-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.basketball-teams {
+  width: 20%;
+  margin: 20px;
+}
+
+.basketball-teams img {
+  max-width: 100%;
+  height: 138.5px;
 }
 
