@@ -19,6 +19,22 @@ body {
   margin: auto;
 }
 
+button {
+  height: 40px;
+  width: 120px;
+
+  background-color: #fff;
+  color: #18a0fb;
+  border: 1px solid #18a0fb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.98);
+  transition: filter 0.2s;
+}
+
 /* HEADER */
 
 header {
@@ -60,16 +76,6 @@ header .container {
   font-weight: bold;
 }
 
-.header-list-button button {
-  height: 40px;
-  width: 120px;
-
-  color: #18a0fb;
-  border: 1px solid #18a0fb;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .header-list-button button:first-child, .header-list-button button:last-child:hover, .banner-text button:hover {
   background-color: #fff;
   color: #18a0fb;
@@ -95,7 +101,7 @@ header .container {
   
   background: url("../assets/banner.png") no-repeat;
   background-size: cover;
-  background-position: cover;
+  background-position: cover ;
 
 }
 
@@ -146,5 +152,72 @@ header .container {
 
 
 
+/* SECTION ARTICLES */
 
+.articles {
+  padding: 80px 0;
+}
+
+.articles h2 {
+  max-width: 600px;
+
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+
+.articles-topic {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin-top: 40px;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 565px;
+  text-align: left;
+}
+
+
+
+/* SECTION CICLISMO */
+
+.bicycling {
+  padding: 80px 0;
+  
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+}
+
+
+.bicycling div, .sport-car div{
+  width: 50%;
+}
+
+.bicycling div:first-child img, .sport-car div:first-child img{
+  max-width: 100%;
+}
+
+.bicycling div:last-child h3, .sport-car div:last-child h3 {
+  margin-bottom: 20px;
+}
+
+/* SECTION SPORT-CAR */
+
+
+.sport-car {
+  padding: 80px 0;
+  
+  flex-direction: row-reverse;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  width: 100%;
+}
 
