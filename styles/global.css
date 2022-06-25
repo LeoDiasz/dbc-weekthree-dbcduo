@@ -11,14 +11,15 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: gray;
+  height: 100vh;
 }
-
 
 .container {
   max-width: 1200px;
   margin: auto;
 }
+
+/* HEADER */
 
 header {
   background-color: #fff;
@@ -34,7 +35,7 @@ header .container {
 }
 
 .header-logo-nav img {
-  width: 70px;
+  width: 80px;
   margin-right: 40px;
 }
 
@@ -63,30 +64,44 @@ header .container {
   height: 40px;
   width: 120px;
 
+  color: #18a0fb;
   border: 1px solid #18a0fb;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.header-list-button button:first-child {
+.header-list-button button:first-child, .header-list-button button:last-child:hover {
   background-color: #fff;
   color: #18a0fb;
 }
 
-.header-list-button button:last-child {
+.header-list-button button:last-child, .header-list-button button:first-child:hover {
   background-color: #18a0fb;
   color: #fff;
 }
 
-.header-list-button button:last-child:hover {
-  background-color: #fff;
-  color: #18a0fb;
+
+/* SECTION BANNER */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+
+  width: 100%;
+  height: calc(100vh - 120px);
+  gap: 40px;
+  
+  background: url("../assets/banner.png") no-repeat;
+  background-size: cover;
+  background-position: cover;
 }
 
-.header-list-button button:first-child:hover {
-  background-color: #18a0fb;
-  color: #fff;
+.banner img {
+  width: 100px;
 }
+
 
 
 
