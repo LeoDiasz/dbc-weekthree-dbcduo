@@ -7,7 +7,7 @@
   
   <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>DbcDuo</title>
+  <title>AllForSports</title>
 </head>
 <body>
   <header>
@@ -16,10 +16,11 @@
         <a href="#"><img src="assets/logo.png" alt="logo"></a>
         <nav>
           <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="#articles">Topics</a></li>
+            <li><a href="#bicycling">Bicycling</a></li>
+            <li><a href="#sport-car">Sport Car</a></li>
+            <li><a href="#basketball">Basketball</a></li>
+            <li><a href="#contact-us">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -30,35 +31,43 @@
     </div>
   </header>
   <section class="banner">
-    <button class="button-play">
-      <img src="assets/play.png" alt="botão de play video">
-    </button>
-    <div class="banner-text">
-      <h1>O mundo dos esportes e para todos</h1>
-      <button>Join today</button>
+    <div class="container">
+      <button type="button" class="button-play">
+        <img src="assets/play.svg" alt="botão de play video">
+      </button>
+    
+      <div class="banner-text">
+        <div>
+          <h1>The world of sports is for everyone</h1>
+        </div>
+        <button>Join today</button>
+      </div>
     </div>
   </section>
   <main>
     <div class="container">
-      <section class="articles">
+      <section class="articles" id="articles">
         <h2>Snap photos and share like never before</h2>
-  
+
         <div class="articles-topic">
           <div class="topic">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad velit! Vero eum laboriosam illum, nostrum recusandae est molestias unde error quos voluptas dicta tenetur.</p>
             <button>Learn more</button>
           </div>
+
           <div class="topic">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad velit! Vero eum laboriosam illum, nostrum recusandae est molestias unde error quos voluptas dicta tenetur.</p>
             <button>Learn more</button>
           </div>
+
           <div class="topic">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad velit! Vero eum laboriosam illum, nostrum recusandae est molestias unde error quos voluptas dicta tenetur.</p>
             <button>Learn more</button>
           </div>
+
           <div class="topic">
             <h4>Lorem, ipsum dolor.</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ad velit! Vero eum laboriosam illum, nostrum recusandae est molestias unde error quos voluptas dicta tenetur.</p>
@@ -66,17 +75,17 @@
           </div>
         </div>
       </section>
-      <section class="bicycling">
-          <div>
-            <img src="assets/imageBicycling.jpg" alt="">
-          </div>
-          <div>
-            <h4>Sed ut perspiciatis unde omnis</h4>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
-          </div>
+      <section id="bicycling" class="bicycling">
+        <div>
+          <img src="assets/imageBicycling.jpg" alt="">
+        </div>
+        <div>
+          <h4>Sed ut perspiciatis unde omnis</h4>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+        </div>
       </section>
     </div>
-    <section class="sport-car">
+    <section  id="sport-car" class="sport-car">
       <div class="container">
         <div>
           <img src="assets/formula1.jpg" alt="formula 1 corrida">
@@ -88,40 +97,63 @@
       </div>
     </section>
     <div class="container">
-      <section class="basketball">
+      <section id="basketball" class="basketball">
         <h2>Basketball</h2>
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
         <div class="basketball-logo">
           <div class="basketball-teams">
-            <img src="./assets/basketball-warriors.png" alt="">
+            <a href="https://www.nba.com/warriors/?tmd=1" target="_blank">
+              <img src="./assets/basketball-warriors.png" alt="Team Warriors">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-cavaliers.png" alt="">
+            <a href="https://www.nba.com/cavaliers" target="_blank">
+              <img src="./assets/basketball-cavaliers.png" alt="Team Cavaliers">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-celtics.png" alt="">
+            <a href="https://www.nba.com/celtics/" target="_blank">
+              <img src="./assets/basketball-celtics.png" alt="Team Celtics">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-chicago.png" alt="">
+            <a href="https://www.nba.com/bulls" target="_blank">
+              <img src="./assets/basketball-chicago.png" alt="Team Bulls">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-lakers.png" alt="">
+            <a href="https://www.nba.com/lakers" target="_blank">
+              <img src="./assets/basketball-lakers.png" alt="Team Lakers">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-nets.png" alt="">
+            <a href="https://www.nba.com/nets/#" target="_blank">
+              <img src="./assets/basketball-nets.png" alt="Team Nets">
+            </a>
           </div>
+
           <div class="basketball-teams">
-            <img src="./assets/basketball-pistons.png" alt="">
+            <a href="https://www.nba.com/pistons" target="_blank">
+              <img src="./assets/basketball-pistons.png" alt="Team Pistons">
+            </a>
           </div>
+          
           <div class="basketball-teams">
-            <img src="./assets/basketball-spurs.png" alt="">
+            <a href="https://www.nba.com/spurs" target="_blank">
+              <img src="./assets/basketball-spurs.png" alt="Team spurs">
+            </a>
           </div>
         </div>
       </section>
     </div>
   </main>
   <footer>
-    <section class="contact-us">
+    <section id="contact-us" class="contact-us">
       <div class="container">
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, pariatur.
         </h3>

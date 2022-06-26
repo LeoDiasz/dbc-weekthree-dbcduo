@@ -24,24 +24,21 @@ button {
   width: 120px;
 
   background-color: #fff;
-  color: #18a0fb;
-  border: 1px solid #18a0fb;
+  color: #4E9AF4;
+  border: 1px solid #4E9AF4;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
   filter: brightness(0.98);
-  background-color: #18a0fb;
+  background-color: #4E9AF4;
   color: #fff;
   transition: 0.2s;
 }
 
 
 /* HEADER */
-header {
-  background-color: #fff;
-}
 
 header .container {
   display: flex;
@@ -49,7 +46,6 @@ header .container {
   justify-content: space-between;
   
   padding: 20px 0px;
-  
 }
 
 .header-logo-nav img {
@@ -67,43 +63,43 @@ header .container {
   margin-left: 30px;
 }
 
-
 .header-logo-nav li a {
-  color: #18a0fb;
+  color: #4E9AF4;
 }
 
 .header-logo-nav li a:hover {
   text-decoration: underline;
-  color: #0E6DAC;
+  color: #4E9AF4;
   font-weight: bold;
 }
 
 .header-list-button button:first-child, .header-list-button button:last-child:hover, .banner-text button:hover, .contact-buttons button:first-child:hover {
   background-color: #fff;
-  color: #18a0fb;
+  color: #4E9AF4;
 }
 
 .header-list-button button:last-child, .header-list-button button:first-child:hover, .contact-buttons button:last-child:hover {
-  background-color: #18a0fb;
+  background-color: #4E9AF4;
   color: #fff;
 }
 
-
 /* SECTION BANNER */
+
 .banner {
+  background: url("../assets/banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner .container {
   display: flex;
   flex-direction: column;
   align-items: center ;
   justify-content: center;
+  gap: 40px;
 
   width: 100%;
   height: calc(100vh - 120px);
-  gap: 40px;
-  
-  background: url("../assets/banner.png") no-repeat;
-  background-size: cover;
-  background-position: cover ;
-
 }
 
 .banner img {
@@ -111,27 +107,23 @@ header .container {
   border-radius: 100%;
 }
 
-/*.button-play img {
-  border-radius: 100%;
-}*/
-
 .button-play {
+  height: 100px;
+  width: 100px;
+  
   border: none;
-  cursor: pointer;
   background: transparent;
-  /*border-radius: 100%;*/
   position: absolute;
 }
 
 .button-play:hover {
   filter: brightness(70%);
   transition: filter 0.5s;
+  border-radius: 100%;
 }
 
 .banner-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-top: 350px;
 }
 
@@ -144,15 +136,12 @@ header .container {
   height: 40px;
   width: 140px;
 
+  background-color: #4E9AF4;
   color: #fff;
-  background-color: #18a0fb;
-  border: 1px solid #18a0fb;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
-
 /* SECTION ARTICLES */
+
 .articles {
   padding: 80px 0;
 }
@@ -163,7 +152,6 @@ header .container {
   font-size: 36px;
   line-height: 1.5;
 }
-
 
 .articles-topic {
   display: flex;
@@ -181,8 +169,8 @@ header .container {
   text-align: left;
 }
 
-
 /* SECTION CICLISMO */
+
 .bicycling {
   padding: 80px 0;
   
@@ -200,12 +188,12 @@ header .container {
   max-width: 100%;
 }
 
-.bicycling div:last-child h3, .sport-car div:last-child h3 {
+.bicycling div:last-child h4, .sport-car div:last-child h4 {
   margin-bottom: 20px;
 }
 
-
 /* SECTION SPORT-CAR */
+
 .sport-car {
   background-color: #dfdfdf;
 }
@@ -213,15 +201,15 @@ header .container {
 .sport-car .container {
   padding: 80px 0;
   
-  flex-direction: row-reverse;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   gap: 70px;
   width: 100%;
 }
 
-
 /*SECTION BASKETBALL*/
+
 .basketball {
   padding: 80px 0;
   text-align: center;
@@ -251,11 +239,10 @@ header .container {
 
 .basketball-teams img {
   max-width: 100%;
-  height: 138.5px;
 }
 
-
 /*FOOTER*/
+
 .contact-us {
   background-color: #dfdfdf;
 }
@@ -283,7 +270,7 @@ header .container {
 }
 
 .contact-buttons button:first-child {
-  background-color: #18a0fb;
+  background-color: #4E9AF4;
   color: #fff;
 }
 
