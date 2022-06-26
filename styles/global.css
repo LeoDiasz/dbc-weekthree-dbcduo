@@ -37,6 +37,11 @@ button:hover {
   transition: 0.2s;
 }
 
+img:hover {
+  filter: brightness(0.75);
+  transition: 0.2s;
+}
+
 
 /* HEADER */
 
@@ -219,7 +224,7 @@ header .container {
 /*SECTION BASKETBALL*/
 
 .basketball {
-  padding: 80px 0;
+  padding-top: 80px;
   text-align: center;
   width: 100%;
 }
@@ -332,4 +337,32 @@ footer {
 
 .copyright {
   text-align: center;
+}
+
+/*RESPONSIVIDADE*/
+@media(max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    margin: 0px 5px
+  }
+
+
+}
+
+@media(max-width: 960px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    max-width: 576;
+  }
+}
+
+@media(max-width: 576px) {
+  .container {
+    max-width: 400px;
+  }
 }
